@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:layout_alignParentTop="true"
+            android:background="?attr/colorPrimary"
+            app:theme="@style/ThemeOverlay.AppCompat.Light"
+            >
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        >
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/txtIrId"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border_black"
+                    android:textColor="@color/colorGreyText"
+                    android:textColorHint="@color/colorGreyText"
+                    android:textSize="@dimen/login_text_size"
+                    android:hint="@string/IrId"
+                    />
+
+                <!--<EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/edt_irname"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border_black"
+                    android:textColor="@color/colorGreyText"
+                    android:textColorHint="@color/colorGreyText"
+                    android:textSize="@dimen/login_text_size"
+                    android:hint="@string/Irname"
+                    />-->
+
+
+                <!--<EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/edt_dateofbirth"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border_black"
+                    android:textColor="@color/colorGreyText"
+                    android:textColorHint="@color/colorGreyText"
+                    android:textSize="@dimen/login_text_size"
+                    android:hint="@string/dateofbirth"
+                    />
+-->
+
+                <!--<EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/edt_mobile"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:maxLength="10"
+                    android:inputType="number"
+                    android:background="@drawable/border_black"
+                    android:textColor="@color/colorGreyText"
+                    android:textColorHint="@color/colorGreyText"
+                    android:textSize="@dimen/login_text_size"
+                    android:hint="@string/mobilenumber"
+                    />-->
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/edt_emails"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/border_black"
+                    android:textColor="@color/colorGreyText"
+                    android:textColorHint="@color/colorGreyText"
+                    android:textSize="@dimen/login_text_size"
+                    android:hint="@string/email"
+                    />
+
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/spn_gender"
+                    android:background="@drawable/border_black"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/gender"
+                    >
+
+                    <!--android:prompt="Relation"-->
+
+
+                </Spinner>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/edt_address1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:maxLength="10"
+                    android:background="@drawable/border_black"
+                    android:textColor="@color/colorGreyText"
+                    android:textColorHint="@color/colorGreyText"
+                    android:textSize="@dimen/login_text_size"
+                    android:hint="@string/address1"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/edt_address2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:maxLength="10"
+                    android:background="@drawable/border_black"
+                    android:textColor="@color/colorGreyText"
+                    android:textColorHint="@color/colorGreyText"
+                    android:textSize="@dimen/login_text_size"
+                    android:hint="@string/address2"
+                    />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/spn_city"
+                    android:background="@drawable/border_black"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/city"
+                    >
+
+                    <!--android:prompt="Relation"-->
+
+
+                </Spinner>
+
+
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/spn_state"
+                    android:background="@drawable/border_black"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/state"
+                    >
+
+                    <!--android:prompt="Relation"-->
+
+
+                </Spinner>
+
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/spn_country"
+                    android:background="@drawable/border_black"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/country"
+
+                    >
+
+                    <!--android:prompt="Relation"-->
+
+
+                </Spinner>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/edt_pincode"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:inputType="number"
+                    android:background="@drawable/border_black"
+                    android:textColor="@color/colorGreyText"
+                    android:textColorHint="@color/colorGreyText"
+                    android:textSize="@dimen/login_text_size"
+                    android:hint="@string/pinnumber"
+                    />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/spn_maritalstatus"
+                    android:background="@drawable/border_black"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/marital"
+                    >
+
+                    <!--android:prompt="Relation"-->
+
+
+                </Spinner>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/edt_fathername"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border_black"
+                    android:textColor="@color/colorGreyText"
+                    android:textColorHint="@color/colorGreyText"
+                    android:textSize="@dimen/login_text_size"
+                    android:hint="@string/fathername"
+                    />
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/edt_mothername"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border_black"
+                    android:textColor="@color/colorGreyText"
+                    android:textColorHint="@color/colorGreyText"
+                    android:textSize="@dimen/login_text_size"
+                    android:hint="@string/mothername"
+                    />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/btnSubmit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:onClick="onClickSubmit"
+                        android:text="Save"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@android:color/white"
+                        />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        style="?android:attr/progressBarStyleLarge"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+
+
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:gravity="bottom"
+                    >
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Save"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cancel"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+
+                        />
+
+
+                </LinearLayout>-->
+
+
+            </LinearLayout>
+
+
+            </ScrollView>
+
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>

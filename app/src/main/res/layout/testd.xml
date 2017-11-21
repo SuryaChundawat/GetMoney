@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:orientation="vertical"
+    tools:context=".Activites.Dashboard">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        >
+
+        <!-- <android.support.design.widget.CollapsingToolbarLayout
+             android:id="@+id/collapsingToolbar"
+             android:layout_width="match_parent"
+             app:titleEnabled="false"
+             android:layout_height="200dp"
+             android:fitsSystemWindows="true"
+             app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+             app:contentScrim="?attr/colorPrimary"
+             app:expandedTitleMarginStart="48dp"
+             app:expandedTitleMarginEnd="64dp"
+             >-->
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:fitsSystemWindows="true"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/dark"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:layout_collapseMode="pin" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="@color/dark"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    >
+                    <advice_natio.project.com.getmoney.circleimageview.CircleImageView
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:id="@+id/Image_view"
+                        android:onClick="onClickNewsPhoto"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/spic"
+                        android:layout_marginLeft="10dp"
+                        app:civ_border_width="2dp"
+                        app:civ_border_color="@color/light" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Shekhar"
+                                android:gravity="center_vertical"
+                                android:id="@+id/txt_name"
+                                android:layout_marginTop="@dimen/margin_top"
+                                android:textSize="@dimen/btn_login_txt_size"
+                                android:textColor="@color/colorGreyText"
+                                />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="IR Id"
+                                android:gravity="center_vertical"
+                                android:id="@+id/txt_irid"
+                                android:layout_marginTop="@dimen/margin_top"
+                                android:textSize="@dimen/dash_textsize"
+                                android:textColor="@color/colorGreyText"
+                                />
+
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Date "
+                                android:gravity="center_vertical"
+                                android:id="@+id/txt_date"
+                                android:layout_marginTop="@dimen/margin_top"
+                                android:textSize="@dimen/dash_textsize"
+                                android:textColor="@color/colorGreyText"
+                                />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+            <!-- </RelativeLayout>-->
+            <!--  <ImageView
+                  android:id="@+id/yourpic"
+                  android:layout_width="match_parent"
+                  android:layout_height="220dp"
+                  android:scaleType="centerCrop"
+                  android:onClick="onClickNewsPhoto"
+                  android:src="@mipmap/ic_placeholder" />-->
+
+            <!-- <LinearLayout
+                 android:id="@+id/addevent_linAdd"
+                 android:layout_width="match_parent"
+                 android:orientation="vertical"
+                 android:gravity="center"
+                 android:visibility="visible"
+                 android:onClick="onClickNewsPhoto"
+                 android:background="@color/darkTransparentColor"
+                 android:layout_height="220dp">
+
+                 <ImageView
+                     android:layout_width="50dp"
+                     android:layout_height="50dp"
+                     android:scaleType="centerCrop"
+                     android:src="@mipmap/ic_gallery" />
+
+                 <TextView
+                     android:id="@+id/txtAddNews"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:gravity="center"
+                     android:layout_marginTop="5dp"
+                     android:text="@string/addevent_upload"
+                     android:textColor="@android:color/white"
+                     android:textSize="30sp" />
+
+             </LinearLayout>-->
+
+
+        </RelativeLayout>
+
+
+
+        <!-- </android.support.design.widget.CollapsingToolbarLayout>-->
+
+        <!--
+                <include layout="@layout/dashboard_details" />
+        -->
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+
+        <!--       <advice_natio.project.com.getmoney.scrap.BottomBar
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottomBar"
+        app:bb_tabXmlResource="@xml/bottombar_tabs_color_changing"
+        app:bb_behavior="shifting|underNavbar"
+       />-->
+
+
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/bottomBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="?android:attr/windowBackground"
+            app:menu="@menu/bottom_navigation" />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

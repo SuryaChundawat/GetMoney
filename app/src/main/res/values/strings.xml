@@ -1,0 +1,227 @@
+<resources>
+    <string name="app_name">Cash Jet</string>
+
+
+    <!--Btn Text name-->
+    <string name="btn_Login">Login</string>
+    <string name="btn_registration">Register</string>
+    <string name="txt_or">OR</string>
+
+
+    <!--<<<<Registartion screenn>>>>>-->
+
+    <string name="IrId">Ir Id</string>
+    <string name="Irname">IR Name</string>
+    <string name="fristname">Frist Name</string>
+    <string name="middlename">Middle Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="Geneder">Gender</string>
+    <string name="email">Email</string>
+    <string name="mobilenumber">Mobile</string>
+    <string name="pannumber">Pan Number</string>
+    <string name="aadharnumber">Aadhar Number</string>
+    <string name="address1">Address 1</string>
+    <string name="address2">Address 2</string>
+    <string name="City">City</string>
+    <string name="state">State</string>
+    <string name="dateofbirth">Date Of Birth</string>
+    <string name="pinnumber">Pin Number</string>
+    <string name="fathername">Father Name</string>
+    <string name="mothername">Mother Name</string>
+    <string name="maritalstate">Marital Status</string>
+    <string name="date">Date</string>
+    <string name="addevent_upload">Upload Your Image</string>
+    <string name="btn_register">Register</string>
+
+    <!--<<Niminee form>>>>-->
+
+    <string name="nomineename">Nominee Name</string>
+    <string name="nomineerelation">Relation</string>
+    <string name="nomineespouce">Spouce</string>
+    <string name="nomineeson">Son</string>
+    <string name="nomineedaughter">Daughter</string>
+    <string name="nomineefather">Father</string>
+    <string name="nomineemother">Mother</string>
+    <string name="btnnext">Next</string>
+
+
+    <!--<<<<<<DashBoard>>>>>-->
+    <string name="dshweekno">Week Number</string>
+    <string name="dshIrId">Ir Id</string>
+    <string name="dshpointsavalable">Available Points</string>
+    <string name="dshderectrefferalpoint">Direct referral Points</string>
+    <string name="dshbounsepoints">Bounus Points</string>
+    <string name="btnEncash">Encash</string>
+    <string name="btnBuymore">Buy More</string>
+    <string name="btnproceed">Proceed</string>
+    <string name="weeknumber">Week Number</string>
+    <string name="year">Year</string>
+    
+    <!--<<<<<<<<<<otp screen >>>>>>>>>>-->
+    <string name="countrycode">India  (+91)</string>
+    <string name="otp_enterphone">Your Phone Number</string>
+    <string name="notificationmessage">Cash Jet will send a one time SMS message to verify your phone number.</string>
+    <string name="verificationcode">Please enter 4 digit verification  sent to </string>
+    <string name="setuppinnotiication">On next screen, you will setup 4 digit account PIN to confirm all future transaacation.</string>
+    <string name="setuppinnotiication2">Please do not share your PIN with anyone including Cash Jet.</string>
+    <string name="termsandcondition">I agree to the <u>Terms And Conditions</u> provided by the company.</string>
+
+    <!--<<<<<<Bank details><>>>>/Bank>-->
+    <string name="payeename">Payee Name</string>
+    <string name="nank_name">Bank Name</string>
+    <string name="bank_branch">Bank Branch</string>
+    <string name="accony_no">Account Number</string>
+    <string name="ifsccode">IFSC Code</string>
+    <string name="micr_number">MICR Number</string>
+
+    <!--<<<<<Image Text>>>>>-->
+    <string name="upload_pan">Upload PAN</string>
+    <string name="upload_adhar">Upload Adhar</string>
+    <string name="upload_pic">Upload Photo</string>
+    <string name="upload_checkpic">Upload Cheque</string>
+
+
+    <!--<<<<<<Upload Details>>>>>-->
+    <string name="upload_pannumber">Pan Number</string>
+    <string name="upload_aadhar">Aadhar Number</string>
+    <string name="check_product">Product 1</string>
+    <string name="product_aqmount">Amount</string>
+    <string name="product_numberofproduct">Number Of Product</string>
+    <string name="product_amount">Product Amount</string>
+    <string name="product_qty">Qty</string>
+    <string name="product_totolamount">Total Amount</string>
+
+
+    <!--<<<<<<Encashment>>>>>>>-->
+    <string name="encash_pointavalible">Points Available</string>
+    <string name="eacash_encashpoint">Encash Points</string>
+    <string name="encash_calulate">Calculate</string>
+    <string name="encash_eqvivalentamount">Equivalent Amount</string>
+    <string name="encash_tds">TDS</string>
+    <string name="encash_servicecharge">Service Charge</string>
+    <string name="encash_creditamount">Credit Amount</string>
+    <string name="encash_processingfee">Processing Fee</string>
+    <string name="encsh_encashamount">Encash Amount</string>
+    <string name="btnencash_proceed">Proceed</string>
+    <string name="menu_proceedtoproduct">Proceed To Product</string>
+
+
+    <!--<<<<<<Title for Screen>>>>>-->
+    <string name="titile_registration">Registration</string>
+    <string name="title_dashboard">Dash Board</string>
+    <string name="titile_bankdetails">Bank Details</string>
+    <string name="titile_uploaddeatails">Upload Details</string>
+    <string name="title_productdetails">Product Details</string>
+    <string name="title_nomineeactivity">Nominee Details</string>
+    <string name="title_encashmentactivity">Encashment</string>
+
+
+    <!--<<<<<<Scan Activity>>>>>>>>-->
+    <string name="scanning">Scanning</string>
+    <string name="done">Save</string>
+    <string name="scan">Next</string>
+    <string name="cantCrop">Cant crop the image, change the points</string>
+    <string name="ok">Ok</string>
+    <string name="loading">Loading</string>
+    <string name="applying_filter">Applying filter</string>
+    <string name="low_memory">Low Memory</string>
+    <string name="low_memory_message">Your phone is low on memory, you may feel some lags while editing images.</string>
+    <string name="low_memory1">Low Memory</string>
+
+    <!--//Shared Preferences-->
+    <string name="reg_irid">IRIRD</string>
+
+
+
+    <string-array name="productqty">
+        <item>Select Qty</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="relation">
+        <item>Relation</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="city">
+        <item>abc</item>
+        <item>shdjk</item>
+        <item>jasajodjao</item>
+    </string-array>
+
+    <string-array name="marital">
+        <item>Marid</item>
+        <item>unmarid</item>
+        <item>widow</item>
+    </string-array>
+
+
+    <string-array name="country">
+        <item>india</item>
+        <item>usa</item>
+        <item>uk</item>
+    </string-array>
+
+    <string-array name="state">
+        <item>sds</item>
+        <item>sdfdfsdf</item>
+        <item>fdghfghf</item>
+        <item>sfs</item>
+        <item>fgh</item>
+        <item>rwter</item>
+        <item>hkjkjhk</item>
+        <item>qwre</item>
+        <item>tyuyt</item>
+        <item>yuiouoiuo</item>
+    </string-array>
+
+    <array name="qty">
+        1,
+        2,
+        3,
+        4,
+        5
+    </array>
+
+
+    <!--<<<Error Message>>>>>>>>-->
+    <string name="error_aadhar">Enter Valid Aadhar Number</string>
+    <string name="error_pan">Enter valid Pan Nummber</string>
+
+    <string name="favorites">Favorites</string>
+    <string name="friends">Friends</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--<<numeric vaues>>-->
+    <string name="number_zero">0</string>
+    <string name="number_one">1</string>
+    <string name="number_two">2</string>
+    <string name="number_three">3</string>
+    <string name="number_four">4</string>
+    <string name="number_five">5</string>
+    <string name="number_six">6</string>
+    <string name="number_seven">7</string>
+    <string name="number_eight">8</string>
+    <string name="number_nine">9</string>
+    <string name="btn_clear">Clear</string>
+    <string name="btn_backspace">Back</string>
+
+
+</resources>

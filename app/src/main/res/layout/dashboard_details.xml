@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/dark"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/txt_weekNo"
+            android:layout_weight="1.11"
+            android:gravity="center"
+            android:text="@string/weeknumber"
+            android:textSize="@dimen/dash_textsize"
+            android:textColor="@color/colorGreyText"
+            />
+        <TextView
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/color_white"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/txt_year"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/year"
+            android:textSize="@dimen/dash_textsize"
+            android:textColor="@color/colorGreyText"
+            />
+    </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/textinputlayoutmargin"
+
+            >
+
+          <!--  <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/textinputlayoutmargin"
+                            android:orientation="horizontal"
+                            android:background="@drawable/border_black"
+                            >
+
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Available Points"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                android:layout_marginRight="20dp"
+                                android:textSize="20sp"
+                                />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_availblepoint"
+                                android:text="5000"
+                                android:gravity="center_vertical"
+                                android:layout_weight="1.8"
+                                android:textSize="30sp"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/textinputlayoutmargin"
+                            android:orientation="horizontal"
+                            >
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_buymore"
+                                android:text="Buy More ?"
+                                android:layout_weight="1"
+                                android:textSize="@dimen/dash_textsize"
+                                android:textColor="@color/colorGreyText"
+                                />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt_eacash"
+                                android:text="Encash"
+                                android:gravity="end"
+                                android:textSize="@dimen/dash_textsize"
+                                android:textColor="@color/colorGreyText"
+                                android:layout_weight="1"
+                                />
+
+
+
+
+
+                        </LinearLayout>
+
+                </LinearLayout>
+           <!-- </android.support.v7.widget.CardView>-->
+        </RelativeLayout>
+
+
+   <!-- </android.support.v4.widget.NestedScrollView>-->
+
+</LinearLayout>

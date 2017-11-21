@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Splash.Splash">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:id="@+id/imageView" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp"
+        android:layout_centerInParent="true"
+        >
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         >
+
+         <android.support.v7.widget.AppCompatButton
+             android:id="@+id/btnlogin"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@color/background"
+             android:text="@string/btn_Login"
+             android:onClick="onClickSubmit"
+             android:textAppearance="?android:textAppearanceMedium"
+             android:textColor="@android:color/white"
+             />
+
+        <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="@string/txt_or"
+           android:gravity="center"
+           android:layout_marginTop="@dimen/margin_top"
+           android:layout_marginBottom="@dimen/margin_bottom"
+           android:textColor="@color/color_white"
+           android:textSize="@dimen/txt_or"
+
+         />
+
+
+         <android.support.v7.widget.AppCompatButton
+             android:id="@+id/btnregistration"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@color/background"
+             android:text="@string/btn_registration"
+             android:onClick="onClickSubmit"
+             android:textAppearance="?android:textAppearanceMedium"
+             android:textColor="@android:color/white"
+             />
+
+     </LinearLayout>
+
+  </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

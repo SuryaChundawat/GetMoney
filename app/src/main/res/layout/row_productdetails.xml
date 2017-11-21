@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/productCheck"
+                    android:text="@string/check_product"
+                    android:textColor="@color/colorGreyText"
+                    android:textColorHint="@color/colorGreyText"
+                    android:textSize="@dimen/login_text_size"
+                    android:layout_weight="0.8"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/productQty"
+                        android:textColor="@color/colorGreyText"
+                        android:textColorHint="@color/colorGreyText"
+                        android:layout_weight="1"
+                        android:text="@string/product_qty"
+                        />
+
+                    <Button
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/btnpluse"
+                        android:layout_weight="1"
+                        android:background="@drawable/pluse"
+                        />
+
+                    <Button
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/btnsubtract"
+                        android:layout_weight="1"
+                        android:background="@drawable/subtract"
+                        />
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/product_aqmount"
+                    android:textColor="@color/colorGreyText"
+                    android:textColorHint="@color/colorGreyText"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/product_amount"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorGreyText"
+                    android:textColorHint="@color/colorGreyText"
+                    android:text="Amount"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

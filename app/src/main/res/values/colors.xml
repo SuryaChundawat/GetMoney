@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9b59b6</color>
+    <color name="colorPrimaryDark">#8e44ad</color>
+    <color name="colorAccent">#8A2BE2</color>
+    <color name="color_bg">#E4E4E4</color>
+
+    <color name="dashboard_icon1">#6c6d5e</color>
+    <color name="dashboard_icon2">#a656af</color>
+    <color name="dashboard_icon3">#c9cc84</color>
+    <color name="dashboard_icon4">#e0ea00</color>
+    <color name="dashboard_icon5">#6fabe8</color>
+    <color name="dashboard_icon6">#6da065</color>
+
+    <color name="blue">#ff59a9ff</color>
+    <color name="orange">#ffff900d</color>
+    <color name="bottom_background_color">#ffc4c2bc</color>
+
+    <color name="polygonViewCircleStrokeColor">#ff59a9ff</color>
+    <color name="polygonViewCircleBackground">#90e5f8ff</color>
+
+
+    <array name="dashbord_icon_color">
+        <item>#6c6d5e</item>
+        <item>#a656af</item>
+        <item>#c9cc84</item>
+        <item>#6da065</item>
+        <item>#6fabe8</item>
+        <item>#6da065</item>
+        <item>#6c6d5e</item>
+        <item>#a656af</item>
+        <item>#c9cc84</item>
+    </array>
+
+
+
+    <!--button bagrond-->
+    <color name="background">#cccccc</color>
+    <color name="colorGreyText">#7B7A7B</color>
+    <color name="darkTransparentColor">#88000000</color>
+
+
+    <color name="color_white">#ffff</color>
+    <color name="dark">#FF222222</color>
+    <color name="light">#FFEEEEEE</color>
+
+
+    <!--Registration textColour-->
+    <color name="tabSelectedIconColor">#000</color>
+
+
+    <color name="bb_inActiveBottomBarItemColor">#747474</color>
+    <color name="bb_darkBackgroundColor">#212121</color>
+    <color name="bb_tabletRightBorderDark">#505050</color>
+    <color name="black">#000</color>
+
+
+</resources>

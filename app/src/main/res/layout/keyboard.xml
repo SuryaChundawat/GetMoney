@@ -1,0 +1,250 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:padding="8dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verification Code"
+            android:gravity="center"
+            android:textSize="@dimen/textsizeotpscreen"
+            android:textColor="@color/color_white"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/verificationcode"
+            android:textSize="@dimen/login_text_size"
+            android:gravity="center"
+            android:textColor="@color/color_white"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_mobilenumber"
+            android:text="+91-1235468790"
+            android:gravity="center"
+            android:textColor="@color/color_white"
+            android:layout_marginTop="5dp"
+            />
+
+
+
+
+
+       <!-- <advice_natio.project.com.getmoney.BaseActivity.PinEntryEditText
+            android:background="@null"
+            android:id="@+id/password_field"
+            android:layout_width="112dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_horizontal"
+            android:cursorVisible="false"
+            android:digits="1234567890"
+            android:layout_marginTop="32dp"
+            android:inputType="number"
+            android:maxLength="6"
+            android:textColor="@android:color/transparent"
+            android:textIsSelectable="false"
+            android:textSize="0px"
+            android:visibility="visible"
+            app:pinBackgroundDrawable="@drawable/bg_pin_round"
+            app:pinCharacterSpacing="8dp"
+            app:pinLineColors="@color/pin_line_colors"
+            app:pinBackgroundIsSquare="true"
+            app:pinTextBottomPadding="4dp" />-->
+
+
+        <advice_natio.project.com.getmoney.BaseActivity.PinEntryEditText
+            android:background="@null"
+            android:id="@+id/txt_pin_entry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:textColor="@color/color_white"
+            android:layout_marginTop="20dp"
+            android:digits="1234567890"
+            android:inputType="number"
+            android:maxLength="6"
+            android:textIsSelectable="false"
+            android:textSize="20sp"
+            android:visibility="visible"
+            app:pinLineColors="@color/pin_line_colors" />
+
+
+    </LinearLayout>
+
+   <!-- <EditText
+        android:id="@+id/password_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="#eeeeee"
+        android:enabled="false"
+        android:minHeight="48dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <ProgressBar
+                android:id="@+id/progressBarToolbar"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:visibility="visible" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnresend"
+                android:text="RESEND"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/color_white"
+                android:background="@color/orange"
+                tools:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+                />
+
+        </LinearLayout>
+
+
+
+   <!-- <TableLayout
+        android:id="@+id/keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:divider="@drawable/keyboard_divider"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:showDividers="beginning|middle|end">-->
+
+
+
+
+
+        <advice_natio.project.com.getmoney.Keyboard.KeyboardViewNumber
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/keyboard_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:focusable="true"
+            android:layout_alignParentBottom="true"
+            android:focusableInTouchMode="true"
+            android:background="#f5f5f5"
+            android:keyBackground="@drawable/push_keyboard_btn"
+            android:keyTextSize="20dp"
+            android:shadowColor="#FFFFFF"
+            android:shadowRadius="0.0"
+            android:keyTextColor="#000000"
+            android:visibility="visible"
+            />
+
+
+       <!-- <TableRow style="@style/keyboard_row">
+            <TextView
+            android:id="@+id/t9_key_1"
+            style="@style/keyboard_number_button"
+            android:text="@string/number_one"/>
+
+            <TextView
+            android:id="@+id/t9_key_2"
+            style="@style/keyboard_number_button"
+            android:text="@string/number_two"/>
+
+            <TextView
+            android:id="@+id/t9_key_3"
+            style="@style/keyboard_number_button"
+            android:text="@string/number_three"/>
+
+        </TableRow>
+
+        <TableRow style="@style/keyboard_row">
+            <TextView
+                android:id="@+id/t9_key_4"
+                style="@style/keyboard_number_button"
+                android:text="@string/number_four"/>
+
+            <TextView
+                android:id="@+id/t9_key_5"
+                style="@style/keyboard_number_button"
+                android:text="@string/number_five"/>
+
+            <TextView
+                android:id="@+id/t9_key_6"
+                style="@style/keyboard_number_button"
+                android:text="@string/number_six"/>
+        </TableRow>
+
+        <TableRow style="@style/keyboard_row">
+            <TextView
+                android:id="@+id/t9_key_7"
+                style="@style/keyboard_number_button"
+                android:text="@string/number_seven"/>
+
+            <TextView
+                android:id="@+id/t9_key_8"
+                style="@style/keyboard_number_button"
+                android:text="@string/number_eight"/>
+
+            <TextView
+                android:id="@+id/t9_key_9"
+                style="@style/keyboard_number_button"
+                android:text="@string/number_nine"/>
+        </TableRow>
+
+        <TableRow style="@style/keyboard_row">
+            <TextView
+                android:id="@+id/t9_key_clear"
+                style="@style/keyboard_button"
+                android:text="@string/btn_clear"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <TextView
+                android:id="@+id/t9_key_0"
+                style="@style/keyboard_number_button"
+                android:text="@string/number_zero"/>
+
+            <TextView
+                android:id="@+id/t9_key_backspace"
+                style="@style/keyboard_button"
+                android:text="@string/btn_backspace"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+        </TableRow>-->
+   <!-- </TableLayout>-->
+    </RelativeLayout>
+</LinearLayout>

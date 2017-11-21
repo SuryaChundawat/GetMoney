@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/upload_details"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Upload Details"
+            />
+        <item
+            android:id="@+id/personal_Details_nav"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Personal details" />
+        <item
+            android:id="@+id/nominee_details"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Nominee Details" />
+        <item
+            android:id="@+id/Bank_Details"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Bank Details" />
+        <item
+            android:id="@+id/Change_pin"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Change Pin" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share"
+                />
+        </menu>
+    </item>
+
+</menu>

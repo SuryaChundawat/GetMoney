@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verification SuccessFull"
+            android:gravity="center"
+            android:textSize="@dimen/textsizeotpscreen"
+            android:textColor="@color/color_white"
+            android:textStyle="bold"
+            />
+
+       <!-- <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/verificationcode"
+            android:textSize="@dimen/login_text_size"
+            android:gravity="center"
+            android:textColor="@color/color_white"
+            android:layout_marginTop="10dp"
+            />
+-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_mobilenumber"
+            android:text="+91-1235468790"
+            android:gravity="center"
+            android:textColor="@color/color_white"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/login_text_size"
+            android:textStyle="bold"
+            android:textColorHint="@color/colorGreyText"
+            tools:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+            />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/success"
+                android:layout_marginTop="20dp"
+
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:layout_weight="0.1"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:gravity="bottom"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/setuppinnotiication"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/login_text_size"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColorHint="@color/colorGreyText"
+            tools:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/setuppinnotiication2"
+            android:textColor="@color/color_white"
+            android:textColorHint="@color/colorGreyText"
+            android:textSize="@dimen/login_text_size"
+            android:textStyle="bold"
+            tools:hintTextAppearance="@style/TextAppearance.App.TextInputLayout" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_setuppin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Setup pin" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
