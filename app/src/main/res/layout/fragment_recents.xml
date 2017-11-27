@@ -9,7 +9,7 @@
     <android.support.design.widget.AppBarLayout
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
-        android:layout_height="270dp"
+        android:layout_height="200dp"
         android:fitsSystemWindows="true"
         app:elevation="0dp"
         android:theme="@style/AppTheme.AppBarOverlay">
@@ -20,12 +20,11 @@
             android:layout_height="match_parent"
             android:fitsSystemWindows="false"
             app:contentScrim="?attr/colorPrimary"
-            app:layout_scrollFlags="scroll|enterAlways"
             >
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical"
                 >
 
@@ -33,7 +32,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_margin="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
                     android:weightSum="2"
                     android:gravity="center_vertical"
                     >
@@ -42,11 +43,11 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:layout_weight="1.4"
-                        android:layout_marginRight="20dp"
+
                         >
                         <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="100dp"
+                            android:layout_width="93dp"
+                            android:layout_height="90dp"
                             android:src="@drawable/spic"
                             android:scaleType="fitXY"
                             />
@@ -56,6 +57,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical"
+                        android:layout_marginLeft="5dp"
                         android:layout_gravity="center_vertical"
                         android:gravity="center_vertical"
                         android:layout_weight="0.6"
@@ -157,8 +159,6 @@
 
 
         </android.support.design.widget.CollapsingToolbarLayout>
-
-
     </android.support.design.widget.AppBarLayout>
 
     <advice_natio.project.com.getmoney.circleimageview.CircleImageView
@@ -183,7 +183,7 @@
 
         <RelativeLayout
             android:layout_width="300dp"
-            android:layout_height="80dp"
+            android:layout_height="100dp"
             android:layout_marginTop="70dp">
 
             <LinearLayout

@@ -34,15 +34,7 @@ public class FoodFragment extends Fragment {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment FoodFragment.
-     */
-    // TODO: Rename and change types and number of parameters
+
     public static FoodFragment newInstance(String param1, String param2) {
         FoodFragment fragment = new FoodFragment();
         Bundle args = new Bundle();
