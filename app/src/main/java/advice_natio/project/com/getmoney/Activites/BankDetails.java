@@ -397,7 +397,7 @@ public class BankDetails extends BaseActivity implements View.OnClickListener,Ap
         Glide.with(this).load(photoUri).into(Upload_img);
     }
 
-    public void onClickSubmit(View view){
+    public void onClickSubmit(View view) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             finishAfterTransition();
         } else {
