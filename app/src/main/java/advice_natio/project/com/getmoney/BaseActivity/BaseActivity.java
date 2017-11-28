@@ -4,6 +4,7 @@ import android.Manifest;
 import android.app.Activity;
 import android.app.ActivityOptions;
 import android.app.Dialog;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -46,6 +47,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     protected int FINISH_TIME = 400;
     protected int ANIM_TIME = 300;
     private Dialog dialog;
+    private ProgressDialog progressDialog=null;
     private Boolean isSuccess;
     public static   Context mContext;
     private KeyboardUtil ku;
@@ -115,6 +117,16 @@ public abstract class BaseActivity extends AppCompatActivity {
             getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
             getWindow().clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
             getWindow().setStatusBarColor(color);
+        }
+    }
+
+    public  void progressDialogStop() {
+        if (progressDialog != null) {
+            if (progressDialog.isShowing()) {
+                progressDialog.dismiss();
+                progressDialog.cancel();
+                progressDialog = null;
+            }
         }
     }
 

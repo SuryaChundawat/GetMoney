@@ -131,6 +131,27 @@
 
                         </android.support.design.widget.TextInputLayout>
 
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textColorHint="@color/colorGreyText"
+                            tools:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                            <EditText
+                                android:id="@+id/edtaccountnumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/accony_no"
+                                android:textSize="@dimen/login_text_size"
+                                android:textColorHint="@color/colorGreyText"
+                                />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+
                         <android.support.design.widget.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"

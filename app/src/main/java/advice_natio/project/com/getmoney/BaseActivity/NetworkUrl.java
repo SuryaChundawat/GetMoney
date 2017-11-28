@@ -17,6 +17,7 @@ public class NetworkUrl {
     public static final String URL_BANKDETILS="https://www.cashjet.co/IRRestService/SetIR_BankDetails";
     public static final String URL_GETBASICDETAILS = "https://www.cashjet.co/IRRestService/GetIR_BasicDetails";
     public static final String URL_ENCASHPOINTS="https://www.cashjet.co/IRRestService/GetIR_EncashDetails";
+    public static final String URL_SETBANKDETAILS = "https://www.cashjet.co/IRRestService/SetIR_BankDetails";
 
 
 }
